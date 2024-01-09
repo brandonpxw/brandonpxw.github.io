@@ -27,6 +27,16 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<!-- Main Stylesheet -->
 	<link href="../css/style.css" rel="stylesheet">
+	<style>
+		.carousel-control-prev-icon, .carousel-control-next-icon {
+			background-color: rgba(0, 0, 0, 0.7); /* Dark background color for the shadow */
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Dark shadow color and properties */
+		}
+
+		.carousel-control-prev, .carousel-control-next {
+			z-index: 1; /* Ensure the icons appear above the carousel content */
+		}		
+	</style>
 </head>
 
 <body>
@@ -78,7 +88,7 @@
 				<div id="projectCarousel" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="../images/portfolio/sysecproj (1).jpg" alt="" class="img-fluid w-100">
+							<img src="../images/portfolio/sysecproj (1).PNG" alt="" class="img-fluid w-100">
 						</div>
 						<!-- Add additional slides with images as needed -->
 					</div>
