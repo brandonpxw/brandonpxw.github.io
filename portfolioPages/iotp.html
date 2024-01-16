@@ -36,6 +36,16 @@
 		.carousel-control-prev, .carousel-control-next {
 			z-index: 1; /* Ensure the icons appear above the carousel content */
 		}		
+		.disabled-container {
+			filter: grayscale(100%);
+			pointer-events: none;
+		}
+
+		.disabled-container a {
+			color: inherit; /* Keep the original text color */
+			cursor: not-allowed;
+		}
+
 	</style>
 </head>
 
@@ -47,7 +57,7 @@
 <nav class="navbar navbar-expand-lg  main-nav " id="navbar">
 	<div class="container">
 	  <a class="navbar-brand" href="index.html">
-	  	<img src="../images/signature.png" alt="" class="img-fluid">
+	  	<img src="../images/signature.png" alt="" class="img-fluid" style="width: 20rem;">
 	  </a>
 
 	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,9 +145,9 @@
 								<h5 class="mb-0">Year</h5>
 								<p>2022</p>
 							</div>
-							<div class="mt-4">
-								<a href="https://github.com/brandonpxw/System-Security-Project" target="_blank" class="btn btn-main btn-small">View project</a>
-							</div>
+							<div class="mt-4 disabled-container">
+								<a href="" target="_blank" class="btn btn-main btn-small">View project</a>
+							</div>													
 						</div>
 
 						<div class="col-lg-6">
@@ -156,8 +166,8 @@
 		</div>
 		<div class="row mt-5 justify-content-center">
 			<div class="col-lg-6 text-center">
-				<a href="portfolio-single4.html" class="btn btn-dark">Previous Work</a>
-				<a href="portfolio-single2.html" class="btn btn-dark">Next Work</a>
+				<a href="appdevproject.html" class="btn btn-dark">Previous Work</a>
+				<a href="awad.html" class="btn btn-dark">Next Work</a>
 			</div>
 		</div>
 	</div>
