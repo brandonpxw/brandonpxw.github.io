@@ -36,6 +36,14 @@
 		.carousel-control-prev, .carousel-control-next {
 			z-index: 1; /* Ensure the icons appear above the carousel content */
 		}		
+			.disabled-container {
+			filter: grayscale(100%);
+			pointer-events: none;
+		}
+		.disabled-container a {
+			color: inherit;
+			cursor: not-allowed;
+		}
 	</style>
 </head>
 
