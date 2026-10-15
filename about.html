@@ -24,6 +24,11 @@
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
+	<style>
+		.quick-facts { border-left: 2px solid rgba(128,128,128,.35); padding-left: 28px; position: sticky; top: 24px; margin-top: 110px; }
+		.quick-facts .about-info span { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; opacity: .7; }
+		@media (max-width: 991px) { .quick-facts { border-left: 0; padding-left: 0; margin-top: 24px; position: static; } }
+	</style>
 </head>
 
 <body>
@@ -57,7 +62,7 @@
 <!-- Banner start -->
 <section class="section banner-3">
 	<div class="container">
-		<div class="row justify-content-center align-items-center">
+		<div class="row justify-content-center align-items-start">
 			<div class="col-lg-7">
 				<h2>Brandon Poon</h2>
 				<p class="lead mb-4">Software Engineering Student, Singapore Institute of Technology</p>
@@ -72,13 +77,31 @@
 				
 			</div>
 
-			<div class="col-lg-5">
-				<!-- <ul class="list-unstyled mt-3 mb-5 about-list">
-					<li>- Web design</li>
-					<li>- Brand Identity</li>
-					<li>- Development & CMS</li>
-					<li>- Phptography</li>
-				</ul> -->
+			<div class="col-lg-4 offset-lg-1">
+				<div class="quick-facts">
+					<h5 class="mb-4">At a glance</h5>
+					<div class="about-info mb-4">
+						<span>Currently</span>
+						<p class="mb-0">Year 1, BEng (Hons) ICT, Software Engineering at SIT</p>
+					</div>
+					<div class="about-info mb-4">
+						<span>Previously</span>
+						<p class="mb-0">Detachment Commander, Singapore Army<br>IT Intern, Land Transport Authority</p>
+					</div>
+					<div class="about-info mb-4">
+						<span>Diploma</span>
+						<p class="mb-0">Infocomm &amp; Security, Nanyang Polytechnic</p>
+					</div>
+					<div class="about-info mb-4">
+						<span>Interested in</span>
+						<p class="mb-0">Generative AI, building side projects, helping people</p>
+					</div>
+					<div class="about-info mb-4">
+						<span>Based in</span>
+						<p class="mb-0">Singapore</p>
+					</div>
+					<a href="resume.html" class="btn btn-main btn-small mt-2">View resume</a>
+				</div>
 			</div>
 		</div>
 	</div>
