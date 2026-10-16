@@ -752,3 +752,57 @@ textarea.form-control {
   color: #f44336;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* ---------- Phones and tablets ---------- */
+
+/* Project filters: one tidy wrapping row instead of big stacked blocks */
+@media (max-width: 767px) {
+  .portfolio .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 22px;
+  }
+  .portfolio .btn-group > .btn {
+    flex: 0 0 auto;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+}
+
+/* Touch screens have no hover: tapping a card opens the project straight away.
+   The cards already show the project name, so the hover label is hidden
+   (kept for screen readers) and the link covers the whole card. */
+@media (hover: none) {
+  .inner-box:hover .image img {
+    transform: none;
+  }
+  .inner-box .image .overlay-box {
+    opacity: 1;
+  }
+  .inner-box .image .overlay-box:before {
+    display: none;
+  }
+  .inner-box .image .overlay-box .overlay-inner {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+  }
+  .inner-box .image .overlay-box .overlay-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .overlay-content h5,
+  .overlay-content p {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
