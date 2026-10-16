@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<title>Brandon Poon</title>
+
+	<!-- mobile responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- ** Plugins Needed for the Project ** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../plugins/themify/css/themify-icons.css">
+	<link rel="stylesheet" href="../plugins/counto/animate.css">
+	<link rel="stylesheet" href="../plugins/aos/aos.css">
+	<link rel="stylesheet" href="../plugins/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../plugins/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../plugins/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="../plugins/animated-text/animated-text.css">
+	<!-- Add these lines to include Bootstrap CSS and JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- Main Stylesheet -->
+	<link href="../css/style.css" rel="stylesheet">
+	<style>
+		.carousel-control-prev-icon, .carousel-control-next-icon {
+			background-color: rgba(0, 0, 0, 0.7); /* Dark background color for the shadow */
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Dark shadow color and properties */
+		}
+
+		.carousel-control-prev, .carousel-control-next {
+			z-index: 1; /* Ensure the icons appear above the carousel content */
+		}		
+			.disabled-container {
+			filter: grayscale(100%);
+			pointer-events: none;
+		}
+		.disabled-container a {
+			color: inherit;
+			cursor: not-allowed;
+		}
+	</style>
+</head>
+
+<body>
+  
+<!-- Navigation Start -->
+<!-- Header Start --> 
+
+<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+	<div class="container">
+	  <a class="navbar-brand" href="index.html">
+	  	<img src="../images/signature.png" alt="" class="img-fluid" style="width: 20rem;">
+	  </a>
+
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-align-justify"></span>
+	  </button>
+  
+		  <div class="collapse navbar-collapse" id="navbarsExample09">
+			<ul class="navbar-nav ml-auto">
+			   <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+			   <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+			   <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Header Close --> 
+<!-- Navigation End -->
+
+
+<section class="page-title section pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h1 class="text-capitalize mb-0 text-lg">Clutch: Uni Deadline Assistant</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section portfolio-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="projectCarousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../images/portfolio/clutch-hero.png" alt="Clutch, a Telegram bot for uni deadlines" class="img-fluid w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="../images/portfolio/clutch-chat.png" alt="Adding a deadline, asking a question and getting a reminder in Clutch" class="img-fluid w-100">
+						</div>
+						<div class="carousel-item">
+							<img src="../images/portfolio/clutch-architecture.png" alt="How Clutch works: Telegram, a Python bot on Google Cloud, per-person databases and Gemini" class="img-fluid w-100">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="col-lg-6">
+				<div class="project-info">
+					<h3 class="mb-4">Personal Project</h3>
+					<p>Clutch is a Telegram bot that keeps track of uni deadlines. You type a deadline the way you'd text a friend, or send a screenshot of an assignment brief, and Clutch saves it, reminds you before it's due and sends a morning summary.</p>
+
+					<p>I built it on my own, from the first line of code to running it 24/7 on Google Cloud for free. My friends now use it too, each with their own private list.</p>
+
+					<div class="row mt-4">
+						<div class="col-lg-6">
+							<div class="info">
+								<h5 class="mb-0">Type</h5>
+								<p>Personal project</p>
+							</div>
+							<div class="info">
+								<h5 class="mb-0">Year</h5>
+								<p>2026</p>
+							</div>
+							<div class="mt-4 disabled-container">
+								<a href="" target="_blank" class="btn btn-main btn-small">View project</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="info">
+								<h5 class="mb-0">Tech</h5>
+								<p>Python, Telegram Bot API, Gemini API, SQLite, Google Cloud, GitHub Actions</p>
+							</div>
+							<div class="info">
+								<h5 class="mb-0">My role</h5>
+								<p>Solo: design, development, testing and deployment</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5 justify-content-center">
+			<div class="col-lg-10">
+				<div class="row text-center mb-5">
+					<div class="col-6 col-md-3 mb-4"><h3 class="mb-0">3</h3><p>releases</p></div>
+					<div class="col-6 col-md-3 mb-4"><h3 class="mb-0">95</h3><p>automated tests</p></div>
+					<div class="col-6 col-md-3 mb-4"><h3 class="mb-0">6</h3><p>universities supported</p></div>
+					<div class="col-6 col-md-3 mb-4"><h3 class="mb-0">$0</h3><p>a month to run</p></div>
+				</div>
+
+				<h3 class="mb-3">The problem</h3>
+				<p>At SIT, deadlines are spread across module pages, slides and emails. I kept finding out about a quiz or a report too late, because nothing put them all in one place and reminded me in time.</p>
+				<p>I set myself two rules: it had to be as easy as sending a text, and it had to respect school systems and privacy. That meant no scraping the school portal and no forwarding school email.</p>
+
+				<h3 class="mb-3 mt-5">What I built</h3>
+				<ul>
+					<li><strong>Adding deadlines in plain words.</strong> Messages like "add a lab next weds 8pm and a math quiz" become two deadlines. Gemini reads the message and returns structured fields, and screenshots of assignment briefs work the same way.</li>
+					<li><strong>Asking instead of guessing.</strong> If a date, time, name or module is missing, Clutch asks with buttons rather than making something up.</li>
+					<li><strong>Answers in plain words.</strong> "How many CS2102 tests do I have left?" is answered from your own list.</li>
+					<li><strong>Made for Singapore universities.</strong> A profile matches short forms like "ict se" to 179 official programmes across SIT, NUS, NTU, SMU, SUTD and SUSS, each with its own term system. Deadlines are then tagged to your modules automatically.</li>
+					<li><strong>Reminders and a morning digest</strong> at times each person chooses, plus edit, undo, history, CSV and calendar export.</li>
+				</ul>
+
+				<h3 class="mb-3 mt-5">Key decisions</h3>
+				<p><strong>The AI reads, the code decides.</strong> Gemini only turns a message into fields. My code checks every result, rejects dates in the past and asks when something is unclear. If Gemini is down, the bot reads what it can itself and asks for the rest step by step, so it never stops working.</p>
+				<p><strong>Privacy by design.</strong> Clutch stores only a deadline's title, module and date, never the message or image. Each person has their own database file, and nothing is stored until they agree to a short privacy notice. As the admin, I can see who uses it but never their deadlines, and <code>/reset</code> deletes everything about a person.</p>
+				<p><strong>Free to run, for years.</strong> It runs on Google Cloud's always-free tier. I chose an IPv6-only server, because a public IPv4 address would have cost money. A daily AI allowance per person keeps everyone inside Gemini's free limits.</p>
+
+				<h3 class="mb-3 mt-5">How I built and tested it</h3>
+				<p>Every push runs a linter and 95 unit tests on GitHub Actions. I release in tagged versions (v1.0.0, v1.1.0, v2.0.0) with release notes, and deploy with a setup script and a service that restarts the bot if it crashes.</p>
+				<p>Unit tests weren't enough for a chat app, so I wrote an end-to-end harness. It sends messages and button taps through the bot's real routing, as three users at once. It caught bugs the unit tests missed, such as buttons that did nothing and a new message being mistaken for the answer to an earlier question.</p>
+
+				<h3 class="mb-3 mt-5">What I learned</h3>
+				<ul>
+					<li>Treat AI output as untrusted input: validate it, and have a plan for when the AI is unavailable.</li>
+					<li>Free tiers are design constraints. They shaped the network setup, how often the bot checks for messages and the per-person limits.</li>
+					<li>Real users find what tests don't. Letting friends use it led to the privacy notice, per-person data and a feedback command.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row mt-5 justify-content-center">
+			<div class="col-lg-6 text-center">
+				<a href="appdevproject.html" class="btn btn-dark">Previous Work</a>
+				<a href="justeat.html" class="btn btn-dark">Next Work</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--  Footer Start-->
+<section class="footer">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-6">
+				<p class="mb-0">Reach me easily at: <a href="mailto:brandonpoonxinwei@gmail.com" class="text-white">brandonpoonxinwei@gmail.com</a></p>
+			</div>
+			<div class="col-lg-6">
+				<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+					<ul class="list-inline mb-0">
+						<!-- <li class="list-inline-item"><a href="https://www.facebook.com/themefisher" target="_blank"><i class="ti-facebook mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="https://twitter.com/themefisher" target="_blank"><i class="ti-twitter mr-3"></i></a>
+						</li> -->
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/brandon-poon-957468283/" target="_blank"><i class="ti-linkedin mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="mailto:brandonpoonxinwei@gmail.com" target="_blank"><i class="ti-email mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/brandonpxw/" target="_blank"><i class="ti-github mr-3"></i></a></li>
+						<!-- <li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/" target="_blank"><i class="ti-pinterest mr-3"></i></a></li>
+						<li class="list-inline-item"><a href="https://dribbble.com/themefisher/" target="_blank"><i class="ti-dribbble mr-3"></i></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer end -->
+<!-- jQuery -->
+<script src="../plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+<script src="../plugins/aos/aos.js"></script>
+<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="../plugins/shuffle/shuffle.min.js"></script>
+<script src="../plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="../plugins/animated-text/animated-text.js"></script>
+<script src="../plugins/counto/apear.js"></script>
+<script src="../plugins/counto/counTo.js"></script>
+
+ <!-- Google Map -->
+<script src="../plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<script src="../	js/script.js"></script>
+
+</html>
